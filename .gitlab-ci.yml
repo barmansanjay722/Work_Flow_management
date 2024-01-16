@@ -1,0 +1,26 @@
+stages:
+- test
+- build
+- deploy
+
+#sast:
+#  stage: test
+#include:
+#- template: Security/SAST.gitlab-ci.yml
+
+deploy:
+  stage: deploy
+  only:
+    refs:
+      - main
+  retry: 2
+  script:
+    - pm2 stop mindit-wmt-reactjs
+    - pm2 del mindit-wmt-reactjs
+    - cp /home/mindit-wmt-reactjs/.env ./
+    - unzip -qo /home/mindit-wmt-reactjs/node_modules.zip -d ./
+    - npm install react-scripts
+    - npm install
+    #- npm run build
+    #- pm2 start app.config.json
+    - pm2 start --name mindit-wmt-reactjs npm -- start

@@ -1,0 +1,12 @@
+.x-icon {
+  height: 1em;
+  width: 1em;
+  top: 0.125em;
+  position: relative;
+}
+.x-alt {
+  color: #777;
+}
+.btn-outline-secondary.active {
+  color: var(--bs-gray-800);
+}

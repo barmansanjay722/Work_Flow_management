@@ -1,0 +1,9 @@
+#commentLabel button {
+  background-color: rgb(85 85 85 / 8%);
+  border-radius: 20px;
+  width: 32px;
+}
+
+.errorDanger {
+  color: red;
+}

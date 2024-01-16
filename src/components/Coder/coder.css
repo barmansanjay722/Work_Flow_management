@@ -1,0 +1,33 @@
+.react-daterange-picker__wrapper{
+    border-radius: 7px;
+    border-color: lightgray;
+    padding: 5px;
+}
+
+.react-daterange-picker__calendar-button{
+    display:none;
+}
+
+.react-daterange-picker__clear-button{
+    transform: rotateY(45deg);
+}
+.css-3iigni-container{
+
+    border-radius: 7px;
+}
+.react-daterange-picker
+{
+    width:100%;
+}
+.react-daterange-picker__inputGroup {
+         min-width: 0;
+        height: 100%;
+         flex-grow: 0; 
+        padding: 0 2px;
+}
+
+.col-xxl-2 {
+    flex: 0 0 auto;
+    width: 13.66666667% !important;
+
+  }
